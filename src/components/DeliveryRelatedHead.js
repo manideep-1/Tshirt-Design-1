@@ -15,10 +15,10 @@ function DeliveryRelatedHead() {
          <div class={`"row" ${style.websiteMyacTitle}`}>
              
         <Link to="/helpandsupport">
-        <a id={style.backtoaccount}><i class='fa fa-angle-left' style={arrow} ></i>&nbsp;Back </a>
+        <p id={style.backtoaccount}><i class='fa fa-angle-left' style={arrow} ></i>&nbsp;Back </p>
         </Link> 
          <div class={style.websiteMyacTitle}>
-         < div class="float-right ">
+         < div className="float-right ">
              <div class={`${style.WebAccHeading} "h-50 d-inline-block"`}>
              <div>Delivery</div>
              <hr></hr>

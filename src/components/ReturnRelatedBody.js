@@ -40,7 +40,7 @@ class OrdersrelatedBody extends Component {
     renderDish(dish) {
         if (dish != null)
             return(
-              <div class="container">
+              <div className="container">
                   <div style={arrow}>
           <p>{dish.description}</p>
           <br/>
@@ -82,17 +82,17 @@ class OrdersrelatedBody extends Component {
             );
         });
         return(
-            <div class="ass">
-            <div class="container">
-                   <div class="box">
-                       <div class="box-row">
-                           <div class="col-sm-4" >
+            <div className="ass">
+            <div className="container">
+                   <div className="box">
+                       <div className="box-row">
+                           <div className="col-sm-4" >
                                <Media list>
                               {menu}
                               </Media>
                           </div>
                           <br/>
-                          <div  class="col-sm-4">
+                          <div  className="col-sm-4">
                             {this.renderDish(this.state.selectedDish)}
                         </div>
                          
@@ -108,44 +108,50 @@ class OrdersrelatedBody extends Component {
 
 export default OrdersrelatedBody;*/
 
-
-import React, {useState} from 'react';
-import FAQ7 from './FAQ7';
+import React, { useState } from "react";
+import FAQ7 from "./FAQ7";
 
 function ReturnRelatedBody() {
-    const [faqs, setfaqs] = useState([
-        {
-           "question": 'My product has been picked up, but I have not been refunded yet.',
-          description : 'Once the order has been picked up, the refund will be processed to your selected mode within 12-15 working days from the date your order is picked, subject to your returns passing the quality check.',
-          a:"Refund will reflect as per below-mentioned timelines:",
-          b:"1. Wallet refund will get credited within few minutes.",
-          c:"2. NEFT refund process will take 5 to 7 working days.",
-          d:"3. Payment Gateway refund process takes 5 to 7 working days excluding Saturdays/Sundays and Bank Holidays.",
-          e:"If it has been longer, please reach out to us below, and we will investigate.",
-          "open": false
-        },
-        {
-          question: "I self-shipped my order. How do I get the refund for my courier charge?",
-          description: "If you have self-shipped the product already please email us the screenshot of the courier receipt along with the order id number. Our customer care executive will work on your query",
-          a:"We will get back to you in the next 24 hours.",
-          open: false
+  const [faqs, setfaqs] = useState([
+    {
+      question:
+        "My product has been picked up, but I have not been refunded yet.",
+      description:
+        "Once the order has been picked up, the refund will be processed to your selected mode within 12-15 working days from the date your order is picked, subject to your returns passing the quality check.",
+      a: "Refund will reflect as per below-mentioned timelines:",
+      b: "1. Wallet refund will get credited within few minutes.",
+      c: "2. NEFT refund process will take 5 to 7 working days.",
+      d:
+        "3. Payment Gateway refund process takes 5 to 7 working days excluding Saturdays/Sundays and Bank Holidays.",
+      e:
+        "If it has been longer, please reach out to us below, and we will investigate.",
+      open: false,
+    },
+    {
+      question:
+        "I self-shipped my order. How do I get the refund for my courier charge?",
+      description:
+        "If you have self-shipped the product already please email us the screenshot of the courier receipt along with the order id number. Our customer care executive will work on your query",
+      a: "We will get back to you in the next 24 hours.",
+      open: false,
+    },
+  ]);
+  const toggleFAQ = (index) => {
+    setfaqs(
+      faqs.map((faq, i) => {
+        if (i === index) {
+          faq.open = !faq.open;
+        } else {
+          faq.open = false;
         }
-      ]);
-      const toggleFAQ = index => {
-        setfaqs(faqs.map((faq, i) => {
-          if (i === index) {
-            faq.open = !faq.open
-          } else {
-            faq.open = false;
-          }
-    
-          return faq;
-        }))
-      }
-      
+
+        return faq;
+      })
+    );
+  };
+
   return (
     <div className="App">
-      
       <div className="faqs">
         {faqs.map((faq, i) => (
           <FAQ7 faq={faq} index={i} toggleFAQ={toggleFAQ} />
@@ -155,8 +161,4 @@ function ReturnRelatedBody() {
   );
 }
 
-
-
 export default ReturnRelatedBody;
-
-

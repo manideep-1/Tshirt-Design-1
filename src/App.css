@@ -298,3 +298,43 @@
 {
   background-color:#ffbb33;
 }
+
+.tnbutton {
+  color: black;
+  display: inline-block;
+  border-radius: 4px;
+  text-decoration: none;
+  overflow: hidden;
+  position: relative;
+  transition: all .2s ease-out 0s;
+}
+.tnbutton:hover > span {
+  top: -20px;
+  opacity: 0;
+}
+.tnbutton:hover > i {
+  opacity: 1;
+  font-size: 22px;
+  top: 50%;
+}
+
+.tnbutton-name,
+.tnbutton-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  transition: all .3s ease-out;
+  position: absolute;
+}
+
+.tnbutton-name {
+  font-size: 15px;
+  font-weight: 600;
+  opacity: 1;
+}
+
+.tnbutton-icon {
+  opacity: 0;
+}

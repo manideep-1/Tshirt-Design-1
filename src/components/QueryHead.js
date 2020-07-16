@@ -1,28 +1,23 @@
-import React from 'react';
-import style from './appStyleTwo.module.css'
-
+import React from "react";
+import style from "./appStyleTwo.module.css";
 
 function QueryHead() {
-    return(
-        <div>
-        <div class={`"row" ${style.websiteMyacTitle}`}>
-            
-               <br></br>
-       
-           <div class={style.websiteMyacTitle}>
-           < div class="float-left ">
-               <div class={`${style.WebAccHeading} "h-50 d-inline-block"`}>
-               <div>Whats's the query About?</div>
-               <hr></hr>
-               </div>  
-           </div>
-       </div>
-      
-      
-   </div>
-   </div>
-    )
+  return (
+    <div>
+      <div class={`"row" ${style.websiteMyacTitle}`}>
+        <br></br>
 
+        <div class={style.websiteMyacTitle}>
+          <div className="float-left ">
+            <div class={`${style.WebAccHeading} "h-50 d-inline-block"`}>
+              <div>Whats's the query About?</div>
+              <hr></hr>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default QueryHead;

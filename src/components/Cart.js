@@ -1,17 +1,14 @@
-import React,{Component} from 'react'
-import CartCards from './CartCards'
-import PriceDetails from './PriceDetails'
+import React, { Component } from "react";
+import CartCards from "./CartCards";
 
-class Cart extends Component
-{
-    render()
-    {
-        return (
-            <>
-            <CartCards></CartCards>
-            </>
-        )
-    }
+class Cart extends Component {
+  render() {
+    return (
+      <>
+        <CartCards></CartCards>
+      </>
+    );
+  }
 }
 
-export default Cart
+export default Cart;

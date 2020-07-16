@@ -86,7 +86,7 @@ const Account =() =>(
 
   <div>
   <div>
-  <div class="container "   id="scaled">
+  <div className="container "   id="scaled">
     <AccountHead></AccountHead>
  
     <AccountBox></AccountBox>
@@ -100,7 +100,7 @@ const addressestotal = () =>(
 
 <div>
   <div>
-  <div class="container "  id="scaled">
+  <div className="container "  id="scaled">
     <MyAddress></MyAddress>
     <MyAddressBody></MyAddressBody>
   </div>
@@ -114,7 +114,7 @@ const AddAddressTotal =() =>(
 
 <div>
   <div>
-  <div class="container ">
+  <div className="container ">
     <MyAddress></MyAddress>
   
     <AddAddress></AddAddress>
@@ -127,7 +127,7 @@ const MyProfileTotal =() =>(
 
 <div>
     <div>
-    <div class="container ">
+    <div className="container ">
       <MyProfileHead></MyProfileHead>
     
       <MyProfile></MyProfile>
@@ -140,7 +140,7 @@ const EditAddressTotal = () =>(
 
   <div>
       <div>
-      <div class="container "  id="scaled">
+      <div className="container "  id="scaled">
         <MyAddress></MyAddress>
         <EditAddress></EditAddress>
       </div>
@@ -153,7 +153,7 @@ const EditAddressTotal = () =>(
 
     <div id="orderscolor">
         <div>
-        <div class="container ">
+        <div className="container ">
           <Orders></Orders>
           <OrdersBody></OrdersBody>
         </div>
@@ -166,7 +166,7 @@ const EditAddressTotal = () =>(
 
       <div>
     <div>
-    <div class="container ">
+    <div className="container ">
     <MyWalletHead></MyWalletHead>
    <MyWallet></MyWallet>
      
@@ -179,7 +179,7 @@ const EditAddressTotal = () =>(
 const OrderInfototal =() =>(
 
 <div id="orderscolor">
-    <div class="container" >
+    <div className="container" >
       <OrderInfoHead></OrderInfoHead>
     
       <OrderInfo></OrderInfo>
@@ -190,7 +190,7 @@ const OrderInfototal =() =>(
 const sleevetshirttotal =() =>(
 
   <div >
-      <div class="container-fluid" >
+      <div className="">
         <SleeveTshirtHead></SleeveTshirtHead>
         <SleeveTshirtBody></SleeveTshirtBody>
       </div>
@@ -198,54 +198,54 @@ const sleevetshirttotal =() =>(
   
   );
   const Query =() => (
-  <div class="container">
-  <div class="row">
+  <div className="container">
+  <div className="row">
           <QueryHead></QueryHead>
   </div>
-  <div class="">
+  <div className="">
           <QueryBox></QueryBox>
   </div>
 </div>  
   );
   const OrdersRelate = () => (
-  <div class="container">
-  <div class="row">
+  <div className="container">
+  <div className="row">
           <OrdersrelatedHead></OrdersrelatedHead>
   </div>
-  <div class="">
+  <div className="">
           <OrdersrelatedBody></OrdersrelatedBody>
   </div>
 </div>  
   )
 
   const Delivery = () => (    
-  <div class="container">
-  <div class="row">
+  <div className="container">
+  <div className="row">
           <DeliveryRelatedHead></DeliveryRelatedHead>
   </div>
-  <div class="">
+  <div className="">
           <DeliverRelatedBody></DeliverRelatedBody>
   </div>
 </div>  
   )
 
   const Payment = () => (
-  <div class="container">
-  <div class="row">
+  <div className="container">
+  <div className="row">
           <PaymentRelatedHead></PaymentRelatedHead>
   </div>
-  <div class="">
+  <div className="">
           <PaymentRelatedBody></PaymentRelatedBody>
   </div>
 </div>  
   )
   
   const Refunds = () => (
-  <div class="container">
-  <div class="row">
+  <div className="container">
+  <div className="row">
           <RefundsRelated ></RefundsRelated>
   </div>
-  <div class="">
+  <div className="">
           <RefundsRelatedBody ></RefundsRelatedBody>
   </div>
 </div>  
@@ -253,12 +253,12 @@ const sleevetshirttotal =() =>(
 
   const Related = () => (
     
-  <div class="container">
-  <div class="row">
+  <div className="container">
+  <div className="row">
           <ReturnRelatedHead>
           </ReturnRelatedHead>
   </div>
-  <div class="">
+  <div className="">
           <ReturnRelatedBody>
           </ReturnRelatedBody>
   </div>
@@ -266,33 +266,33 @@ const sleevetshirttotal =() =>(
   )
   
   const Wallet = () => (
-  <div class="container">
-  <div class="row">
+  <div className="container">
+  <div className="row">
         <WalletRelated ></WalletRelated>
   </div>
-  <div class="">
+  <div className="">
         <WalletRelatedBody ></WalletRelatedBody>
   </div>
 </div>  
   )
   
   const AccountRelate = () => (
-    <div class="container">
-      <div class="row">
+    <div className="container">
+      <div className="row">
         <AccountRelated ></AccountRelated>
       </div>
-      <div class="">
+      <div className="">
         <AccountRelatedBody></AccountRelatedBody>
       </div>
     </div>  
   )
   
   const Another = () => (
-    <div class="container">
-      <div class="row">
+    <div className="container">
+      <div className="row">
         <AnotherRelated></AnotherRelated>
       </div>
-      <div class="">
+      <div className="">
         <AnotherRelatedBody ></AnotherRelatedBody>
       </div>
     </div>  
