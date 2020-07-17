@@ -55,7 +55,13 @@ function Header() {
             >
               ⠀
             </span>
-            <Nav.Link href="#Login">Login</Nav.Link>
+            <Nav.Link
+              href="#Login"
+              data-target="#Login-demo"
+              data-toggle="modal"
+            >
+              Login
+            </Nav.Link>
             <Nav.Link className="d-none d-lg-block" href="/wishlist">
               <Heart className="ml-1 text-muted mt-1" size={15} />
             </Nav.Link>

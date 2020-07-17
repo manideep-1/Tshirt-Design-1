@@ -1,25 +1,39 @@
 import React, { Component } from "react";
 import data from "./data";
-import Octicon from "react-octicon";
+// import Octicon from "react-octicon";
+// import style from './appStyles.module.css';
 
+const close ={
+  position: "absolute",
+  color: "black",
+  top: "0",
+  right: "0",
+  margin:"5px"
+}
+const cardImgTop = {
+  width: "100%",
+  height: "15vw",
+  objectFit: "cover",
+}
+const titleHeight={
+  height:"50px"
+}
 const widthSet = {
   width: "18rem",
+  margin: "30px",
 };
-const closeMargin = {
-  margin: "3px",
-};
+// const closeMargin = {
+//   margin: "3px",
+// };
 const contentSet = {
   position: "absolute",
   left: "50%",
   top: "40%",
   transform: "translate(-50%, -50%)",
 };
-const heartSet = {
-  position: "absolute",
-  left: "50%",
-  bottom: "200%",
-  transform: "translate(-50%)",
-};
+const marginSet={
+  margin:"70px"
+}
 const OrderDetails = data.OrderDetails;
 let noOfItems;
 
@@ -33,28 +47,30 @@ class Cards extends Component {
       <>
         {noOfItems === 0 && (
           <div style={contentSet}>
-            <img alt="" src="brhrt.jpg" style={heartSet} height="100" width="100" />
+            <i class='fas fa-heart-broken' style={{fontSize:"100px",color:"red"}}></i>
             <h2>Your WishList is Empty!</h2>
           </div>
         )}
+        <div className="container" style={marginSet}>
+        <div class="col-12">
         <div className="row">
           {OrderDetails.map((order_info, index) => (
-            <div className="card marginSet" style={widthSet}>
-              <div ng-repeat="file in imagefinaldata" className="img_wrp">
+            <div className="card" style={widthSet}>
+              <div ng-repeat="file in imagefinaldata">
                 <a href="/">
                   <img
                     src={require(`./${order_info.OrderImg}.jpg`)}
-                    className="card-img-top"
+                    className="card-img-top" style={cardImgTop}
                     alt="..."
                   ></img>
                 </a>
                 <a href="/">
-                  <Octicon className="close" style={closeMargin} name="x" />
+                <i class="fa fa-times" style={close} aria-hidden="true"></i>
                   {/* <img className="close" style={closeMargin} src="closeicon.png" height="20" width="20" /> */}
                 </a>
               </div>
               <div className="card-body">
-                <h5 className="card-title">
+                <h5 className="card-title" style={titleHeight}>
                   {order_info.OrderName}&nbsp; ({order_info.Size})
                 </h5>
                 {order_info.actualPrice != null ? (
@@ -83,6 +99,8 @@ class Cards extends Component {
               </div>
             </div>
           ))}
+        </div>
+        </div>
         </div>
       </>
     );

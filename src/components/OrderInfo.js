@@ -1,27 +1,24 @@
 import React, { Component } from "react";
 import style from "./appStyle.module.css";
+// import data from './data';
 
-// const addon = {
-//   fontSize: "30px",
-//   display: "block",
-//   marginLeft: "auto",
-//   marginRight: "auto",
-//   width: "39%",
-//   float: "right",
-// };
+// const addon={
+//     fontSize:'30px',
+//     display:'block',
+//     marginLeft:'auto',
+//     marginRight:'auto',
+//     width:'39%',
+//     float:'right',
+// }
 
-// const OrderDetails = data.OrderDetails;
+//  const OrderDetails=data.OrderDetails;
 
 export default class OrdersBody extends Component {
-  // constructor(props) {
-  //   super(props);
-  // }
-
   render() {
     return (
       <div class={`${style.accOptions} "container"`}>
-        <div className="row">
-          <div className="col-md-7">
+        <div class="row">
+          <div class="col-md-7">
             <br></br>
             <span class={style.orderId}>Order:</span>
             <span class={style.orderIdval}>#13345</span>
@@ -29,7 +26,7 @@ export default class OrdersBody extends Component {
             <span class={style.orderIdvalpadding}>03-05-2020</span>
             <span class={style.orderIdvalpadding}>Order Placed :</span>
             <div class={`${style.addbordertoorder}  ${style.orderscardcolor}`}>
-              <img alt="" class={style.tshirtorder} src={require(`./tshirt4.jpg`)} />
+              <img class={style.tshirtorder} src={require(`./tshirt6.jpg`)} alt=""/>
               <br></br>
               <span class={style.orderpadding}>
                 Misty White Half Sleeve Tshirt&nbsp;
@@ -37,10 +34,27 @@ export default class OrdersBody extends Component {
               <br></br>
               <span class={style.orderpadding}>Rs.349 | &nbsp; Size:M</span>
               <br></br>
-              <label class={style.labeldeliveryfailed}>Order Failed</label>
+              {/* <label class={style.labeldeliveryfailed}>Order Failed</label>  */}
+              <label class={style.labeldeliverysuccess}>Delivered</label>
+              <div id={style.tracking}>
+                <div id={style.bullet1}></div>
+                <div id={style.bulletline1}></div>
+                <div id={style.bullet2}></div>
+                <div id={style.bulletline2}></div>
+                <div id={style.bullet3}></div>
+                <div id={style.bulletline3}></div>
+                <div id={style.bullet4}></div>
+                <div id={style.bulletline4}></div>
+                <div id={style.bullet5}></div>
+                <div id={style.confirmed}>Confirmed</div>
+                <div id={style.readytoship}>Ready to Ship</div>
+                <div id={style.shipped}>Shipped</div>
+                <div id={style.outfordelivery}>Out For Delivery</div>
+                <div id={style.delivered}>Delivered</div>
+              </div>
             </div>
           </div>
-          <div className="col-5">
+          <div class="col-5">
             <div class={`${style.adddetailsorderinfo}`}>
               <span class={style.shippingDetails}>Shipping Details</span>
               <br></br>
@@ -53,8 +67,8 @@ export default class OrdersBody extends Component {
             </div>
           </div>
         </div>
-        <div className="row">
-          <div className="col-md-7">
+        <div class="row">
+          <div class="col-md-7">
             <div class={style.helpmarginset}>
               <div
                 class={`${style.addbordertoorder}  ${style.ordersinfohelpsupport}`}
@@ -65,96 +79,96 @@ export default class OrdersBody extends Component {
                 </span>
                 <br></br>
                 <div class={style.helporder}>
-                  <button className="btn btn-outline-primary">
+                  <button class="btn btn-outline-primary">
                     VISIT HELP AND SUPPORT
                   </button>
                 </div>
               </div>
             </div>
           </div>
-          <div className="col-5">
+          <div class="col-5">
             <div class={`${style.adddetailsorderinfo}`}>
-              <div className="row">
-                <div className="col-8">
+              <div class="row">
+                <div class="col-8">
                   <span class={style.shippingDetails}>Payment summary</span>
                   <br></br>
                 </div>
 
-                <div className="col-4"></div>
+                <div class="col-4"></div>
               </div>
 
-              <div className="row">
-                <div className="col-9">
+              <div class="row">
+                <div class="col-9">
                   <span class={style.paymentsummaryinfoname}>Cart Total</span>
                   <br></br>
                 </div>
-                <div className="col-3">
+                <div class="col-3">
                   <span class={style.paymentsummaryinfoname}>Rs.349</span>
                 </div>
               </div>
 
-              <div className="row">
-                <div className="col-9">
+              <div class="row">
+                <div class="col-9">
                   <span class={style.paymentsummaryinfoname}>
                     Shipping Cost
                   </span>
                   <br></br>
                 </div>
-                <div className="col-3">
+                <div class="col-3">
                   <span class={style.paymentsummaryinfoname} id={style.free}>
                     FREE
                   </span>
                 </div>
               </div>
 
-              <div className="row">
-                <div className="col-9">
+              <div class="row">
+                <div class="col-9">
                   <span class={style.paymentsummaryinfoname}>COD</span>
                   <br></br>
                 </div>
-                <div className="col-3">
+                <div class="col-3">
                   <span class={style.paymentsummaryinfoname} id={style.free}>
                     FREE
                   </span>
                 </div>
               </div>
 
-              <div className="row">
-                <div className="col-9">
+              <div class="row">
+                <div class="col-9">
                   {" "}
                   <span class={style.paymentsummaryinfoname}>Order Total</span>
                   <br></br>
                 </div>
-                <div className="col-3">
+                <div class="col-3">
                   <span class={style.paymentsummaryinfoname}>Rs.349</span>
                 </div>
               </div>
 
-              <div className="row">
-                <div className="col-9">
+              <div class="row">
+                <div class="col-9">
                   {" "}
                   <span class={style.paymentsummaryinfoname}>
                     Paid from Wallet
                   </span>
                   <br></br>
                 </div>
-                <div className="col-3">
+                <div class="col-3">
                   <span class={style.paymentsummaryinfoname}>Rs.175</span>
                 </div>
               </div>
               <hr></hr>
-              <div className="row">
-                <div className="col-9">
+              <div class="row">
+                <div class="col-9">
                   {" "}
                   <span class={style.amountpaid}>Amount Paid</span>
                   <br></br>
                 </div>
-                <div className="col-3">
+                <div class="col-3">
                   <span class={style.amountpaid}>Rs.174</span>
                 </div>
               </div>
 
-              <div className="row"></div>
+              <div class="row"></div>
             </div>
           </div>
         </div>

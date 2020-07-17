@@ -41,7 +41,13 @@ import AnotherRelatedBody from './components/AnotherRelatedBody';
 import PaymentRelatedBody from './components/PaymentRelatedBody';
 import ReturnRelatedHead from './components/ReturnRelatedHead';
 import ReturnRelatedBody from './components/ReturnRelatedBody';
-
+import FeedbackHead from './components/FeedbackHead';
+import FeedbackBody from './components/FeedbackBody';
+import Login from './components/LoginComponent';
+import OtpPasswordComponent from './components/OtpPasswordComponent';
+import Otp from './components/OtpComponent';
+import SignUp from './components/SignUpComponent';
+import SignUpDetails from './components/SignUpDetailsComponent';
 function App() {
 
   return (
@@ -76,6 +82,12 @@ function App() {
           <Route path="/helpandsupport/account" exact component={AccountRelate} />
           <Route path="/helpandsupport/another" exact component={Another} />
           <Route path="/tshirtdesign" exact component={Card} />
+          <Route path="/feedback" exact component={Feedback}/>
+          <Route path="/login" exact component={Login}/>
+          <Route path="/login/continue" exact component={OtpPasswordComponent}/>
+          <Route path="/login/otp" exact component={Otp}/>
+          <Route path="/signup" exact component={SignUp}/>
+          <Route path="/signupdetails" exact component={SignUpDetails}/>
         </Switch>
       </Router>
       <Footer/>
@@ -95,6 +107,20 @@ const Account =() =>(
   </div>
   
 );
+const Feedback =() =>(
+
+  <div>
+    <div>
+    <div class="container "  id="scaled">
+      <FeedbackHead></FeedbackHead>
+      <FeedbackBody></FeedbackBody>
+    </div>
+    </div>
+    </div>
+  
+    
+  );
+  
 
 const addressestotal = () =>(
 

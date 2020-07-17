@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import style from "./appStyle.module.css";
+import ViewCard from "./ViewCard";
 
 const arrow = {
   fontSize: "25px",
@@ -13,9 +14,10 @@ export class SleeveTshirtBody extends Component {
     return (
       <div className="container">
         <div className="row">
-          <div className="col-3">
+          <div className="col-3 bg-white" >
+          <div className="sticky-top" style={{paddingTop:"80px"}}>
             <div id={style.faq}>
-              <span>faqs</span>
+              <span>Filters</span>
             </div>
             <div>
               <div
@@ -153,6 +155,10 @@ export class SleeveTshirtBody extends Component {
 
               <hr class={style.setline}></hr>
             </div>
+          </div>
+          </div>
+          <div className="col-9" style={{position:"relative",top:"-300"}}>
+            <ViewCard></ViewCard>
           </div>
         </div>
       </div>

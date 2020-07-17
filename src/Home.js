@@ -134,6 +134,7 @@ function Home() {
           </Card>
         </Row>
       </Container>
+      
     </div>
   );
 }
