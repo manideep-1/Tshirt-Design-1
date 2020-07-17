@@ -43,7 +43,7 @@ class PopUpQty extends Component {
           <div className="modal-dialog">
             <div className="modal-content">
               <div className="modal-header">
-                <button type="button" className="close" data-dismiss="modal">
+                <button type="button" id={style.close} className="close" data-dismiss="modal">
                   &times;&nbsp;
                 </button>
                 <h5 className="modal-title">Set Quantity</h5>
@@ -91,21 +91,9 @@ class PopUpQty extends Component {
                   </label>
                 </span>
                 &nbsp;&nbsp;&nbsp;
-                {/* <h6 style={{textAlign:"center"}}>{this.state.qty}</h6>
-                            <div className=".container" style={{textAlign:"center"}}>
-                            <span id={style.checkedid} >
-                                <button type="button" id={style.option} onClick={this.incrementOne}>+1</button>
-                            </span>
-                            <span>
-                                <button type="button" id={style.option} onClick={this.incrementFive} >+5</button> 
-                            </span>
-                            <span>
-                                <button type="button" id={style.option} onClick={this.incrementTen} >+10</button> 
-                            </span>    
-                            </div> */}
               </div>
               <div className="modal-footer">
-                <button type="button" className="btn btn-warning">
+                <button type="button" data-dismiss="modal" className="btn btn-warning">
                   Done
                 </button>
               </div>

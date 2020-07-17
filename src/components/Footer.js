@@ -1,6 +1,5 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import "./App.css";
 
 function Footer() {
   return (
@@ -19,10 +18,14 @@ function Footer() {
         >
           <Col className="p-0 pt-4 col-6 col-lg-4 col-xl-3">
             <p className="text-warning">CUSTOMER SERVICE</p>
-            <a href="/contact-us" className="text-white">
-              Contact us
+            <a href="/helpandsupport" className="text-white">
+              Help and Support
             </a>
             <br />
+            <a href="/feedback" className="text-white">
+              Feedback and Suggestions
+            </a>
+            <br/>
             <a href="/track" className="text-white">
               Track Order
             </a>

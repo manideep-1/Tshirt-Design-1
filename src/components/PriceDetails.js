@@ -14,7 +14,7 @@ class PriceDetails extends Component {
           <div class={`${style.adddetailsorderinfo}`} style={marginSet}>
             <div className="row">
               <div className="col-8">
-                <span class={style.shippingDetails}>Payment summary</span>
+              <h5 class="card-title">Payment summary</h5>
                 <br></br>
               </div>
 
@@ -23,69 +23,53 @@ class PriceDetails extends Component {
 
             <div className="row">
               <div className="col-9">
-                <span class={style.paymentsummaryinfoname}>Cart Total</span>
+              <h6 className="card-text">Cart Total</h6> 
                 <br></br>
               </div>
               <div className="col-3">
-                <span class={style.paymentsummaryinfoname}>
-                  ${this.props.totalPrice}
-                </span>
+              <h6 className="card-text">${this.props.totalPrice}</h6>
+                              </div>
+            </div>
+
+            <div className="row">
+              <div className="col-9">
+              <h6 className="card-text ">Coupon Discount</h6>
+                <br></br>
+              </div>
+              <div className="col-3">
+              <h6 className="card-text .text-primary"><a href="#">Apply Coupon</a></h6>
               </div>
             </div>
 
             <div className="row">
               <div className="col-9">
-                <span class={style.paymentsummaryinfoname}>
-                  Coupon Discount
-                </span>
-                <br></br>
+              <h6 className="card-text ">Order Total</h6>
               </div>
               <div className="col-3">
-                <span class={style.paymentsummaryinfoname} id={style.free}>
-                  <a href="/">Apply Coupon</a>
-                </span>
+              <h6 className="card-text" >${this.props.totalPrice}</h6>
               </div>
             </div>
 
             <div className="row">
               <div className="col-9">
-                <span class={style.paymentsummaryinfoname}>Order Total</span>
+          
+                <h6 className="card-text">Delivery charges</h6>
                 <br></br>
               </div>
               <div className="col-3">
-                <span class={style.paymentsummaryinfoname}>
-                  ${this.props.totalPrice}
-                </span>
-              </div>
-            </div>
-
-            <div className="row">
-              <div className="col-9">
-                {" "}
-                <span class={style.paymentsummaryinfoname}>
-                  Delivery charges
-                </span>
-                <br></br>
-              </div>
-              <div className="col-3">
-                <span className="font-weight-light card-text">
-                  <del>$99</del>
-                </span>
-                <span class={style.paymentsummaryinfoname} id={style.free}>
-                  FREE
-                </span>
+              <h6 className="text-muted card-text"><del>$99</del></h6>
+              <h6 className="card-text text-success">FREE</h6>
               </div>
             </div>
 
             <hr></hr>
             <div className="row">
               <div className="col-9">
-                {" "}
-                <span class={style.amountpaid}>Total</span>
+              <h5 className="card-text">Total</h5>
                 <br></br>
               </div>
               <div className="col-3">
-                <span class={style.amountpaid}>${this.props.totalPrice}</span>
+              <h5 className="card-text">${this.props.totalPrice}</h5>
               </div>
             </div>
             <div className="row">

@@ -46,10 +46,7 @@ function SleeveTshirtHead() {
       <div class={`"row" ${style.websiteMyacTitlehome}`}>
         <div className="container">
           <Link to="/accounts/">
-            <p id={style.backtoaccount}>
-              <i className="fa fa-angle-left" style={arrow}></i>&nbsp;Back to
-              Home Page
-            </p>
+            <p id={style.backtoaccount}>&larr;Back to Home Page</p>
           </Link>
         </div>
 

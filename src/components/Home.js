@@ -8,7 +8,6 @@ import {
   FormControl,
 } from "react-bootstrap";
 import { Search } from "react-bootstrap-icons";
-import "./App.css";
 
 function Home() {
   return (

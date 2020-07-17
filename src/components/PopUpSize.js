@@ -19,8 +19,8 @@ class PopUpSize extends Component {
           <div className="modal-dialog">
             <div className="modal-content">
               <div className="modal-header">
-                <button type="button" className="close" data-dismiss="modal">
-                  &times;
+                <button type="button" className="close" id={style.close} data-dismiss="modal">
+                  &times;&nbsp;
                 </button>
                 <h5 className="modal-title">Select Size</h5>
               </div>
@@ -72,7 +72,7 @@ class PopUpSize extends Component {
                 <a href="/" className="badge badge-light mr-auto">
                   Size Chart
                 </a>
-                <button type="button" className="btn btn-warning">
+                <button type="button" data-dismiss="modal" className="btn btn-warning">
                   Done
                 </button>
               </div>

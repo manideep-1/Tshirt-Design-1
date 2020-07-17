@@ -1,8 +1,8 @@
 import React from 'react';
-import Home from './Home'
+import Home from './components/Home'
 import Product from './Product'
-import Footer from './Footer'
-import Header from './Header'
+import Footer from './components/Footer'
+import Header from './components/Header'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import AccountHead from './components/AccountHead';
 import AccountBox from './components/AccountBox';
@@ -43,11 +43,10 @@ import ReturnRelatedHead from './components/ReturnRelatedHead';
 import ReturnRelatedBody from './components/ReturnRelatedBody';
 import FeedbackHead from './components/FeedbackHead';
 import FeedbackBody from './components/FeedbackBody';
-import Login from './components/LoginComponent';
-import OtpPasswordComponent from './components/OtpPasswordComponent';
-import Otp from './components/OtpComponent';
-import SignUp from './components/SignUpComponent';
-import SignUpDetails from './components/SignUpDetailsComponent';
+import LoginPage from './components/LoginPage';
+import "./App.css";
+
+
 function App() {
 
   return (
@@ -69,7 +68,7 @@ function App() {
           <Route path="/accounts/myprofile" exact component={MyProfileTotal}></Route>
           <Route path="/accounts/mywallet" exact component={Wallettotal}></Route>
           <Route path="/accounts/orders/ordersinfo" exact component={OrderInfototal}></Route>
-          <Route path="/accounts/tshirtsleeve" exact component= {sleevetshirttotal}></Route>
+          <Route path="/design" exact component= {sleevetshirttotal}></Route>
           <Route path="/cart" exact component= {Cart}></Route>
           <Route path="/wishlist" exact component= {WishList}/>
           <Route path="/helpandsupport" exact component={Query}/>
@@ -83,11 +82,7 @@ function App() {
           <Route path="/helpandsupport/another" exact component={Another} />
           <Route path="/tshirtdesign" exact component={Card} />
           <Route path="/feedback" exact component={Feedback}/>
-          <Route path="/login" exact component={Login}/>
-          <Route path="/login/continue" exact component={OtpPasswordComponent}/>
-          <Route path="/login/otp" exact component={Otp}/>
-          <Route path="/signup" exact component={SignUp}/>
-          <Route path="/signupdetails" exact component={SignUpDetails}/>
+          <Route path="/login" exact component={LoginPage}/>
         </Switch>
       </Router>
       <Footer/>

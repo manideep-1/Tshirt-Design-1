@@ -7,7 +7,6 @@ import {
   Dropdown,
 } from "react-bootstrap";
 import { Heart, Cart, Search, Person } from "react-bootstrap-icons";
-import "./App.css";
 
 function Header() {
   return (
@@ -32,10 +31,10 @@ function Header() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto d-flex justify-content-end mr-2 align-items-center">
-            <Nav.Link href="/temp" active>
+            <Nav.Link href="/" active>
               Home
             </Nav.Link>
-            <Nav.Link href="#Design">Design</Nav.Link>
+            <Nav.Link href="/design">Design</Nav.Link>
             <Nav.Link href="#Customize">Customize</Nav.Link>
             <InputGroup className="mx-2">
               <InputGroup.Prepend>
@@ -56,9 +55,7 @@ function Header() {
               ⠀
             </span>
             <Nav.Link
-              href="#Login"
-              data-target="#Login-demo"
-              data-toggle="modal"
+              href="/login"
             >
               Login
             </Nav.Link>

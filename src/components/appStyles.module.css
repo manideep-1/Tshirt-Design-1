@@ -67,3 +67,10 @@ input[type="radio"] {
   text-transform: uppercase;
   color: green;
 }
+#close{
+  margin:"5px";
+}
+#close:focus,#close:active {
+  outline: none !important;
+  box-shadow: none;
+}
